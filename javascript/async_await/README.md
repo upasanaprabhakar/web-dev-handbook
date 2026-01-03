@@ -8,7 +8,7 @@ It's built on top of Promises - so you need to understand Promises first. Think 
 
 **Simple analogy:** When you order food online, you don't sit and stare at the app until it arrives. You do other things and come back when you get the notification. That's basically what await does - it lets JavaScript do other work while waiting for something to complete.
 
----
+
 
 ## Why use it?
 
@@ -41,7 +41,7 @@ Main benefits:
 - Simple error handling with try/catch
 - Easier to debug
 
----
+
 
 ## How it works
 
@@ -66,7 +66,7 @@ sequenceDiagram
     Async-->>Main: Promise resolves
 ```
 
----
+
 
 ## Key concepts
 
@@ -106,7 +106,7 @@ const [a, b, c] = await Promise.all([
 ]);
 ```
 
----
+
 
 ## Common mistakes I've seen
 
@@ -174,7 +174,7 @@ const users = await Promise.all(
 );
 ```
 
----
+
 
 ## Best practices
 
@@ -227,7 +227,7 @@ async function processData(id) {
 }
 ```
 
----
+
 
 ## Things to remember
 
@@ -237,7 +237,7 @@ async function processData(id) {
 4. Use `Promise.all()` for parallel operations
 5. `await` only works inside async functions
 
----
+
 
 ## Related topics
 

@@ -21,7 +21,7 @@ Each topic has:
 - Implementation file with code examples
 - Common mistakes and best practices
 
-Keeping it simple - max 2 files per topic.
+Keeping it simple - max 2 -3 files per topic.
 
 ## 🚀 Coming up
 
