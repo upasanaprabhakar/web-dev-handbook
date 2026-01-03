@@ -34,6 +34,6 @@ Keeping it simple - max 2 files per topic.
 
 This is my learning journal. Not everything will be perfect, but it's real work and shows my actual understanding. Adding new topics as I learn them.
 
----
+
 
 ⚡ Started: January 2026
