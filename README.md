@@ -13,6 +13,7 @@ My personal knowledge base for web development. Building this as I learn and bre
 
 ### JavaScript
 - [Async/Await](./javascript/async-await/) - Asynchronous JavaScript explained
+- [Promises](./javascript/promises/) - Foundation of async operations
 
 ## 🗂️ How I'm organizing this
 
