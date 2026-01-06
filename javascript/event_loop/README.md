@@ -68,34 +68,28 @@ graph TB
 
 ```mermaid
 sequenceDiagram
-    participant Code as Your Code
-    participant Stack as Call Stack
-    participant Web as Web APIs
-    participant Micro as Microtask Queue
-    participant Macro as Macrotask Queue
-    participant Loop as Event Loop
+    participant Code
+    participant Stack
+    participant WebAPI
+    participant MicroQueue
+    participant MacroQueue
+    participant EventLoop
     
-    Code->>Stack: console log start
-    Stack->>Stack: Execute
-    Code->>Stack: setTimeout with callback
-    Stack->>Web: Send to Web APIs
-    Web->>Macro: Add to Macrotask Queue
-    Code->>Stack: Promise resolve with callback
-    Stack->>Micro: Add to Microtask Queue
-    Code->>Stack: console log end
-    Stack->>Stack: Execute
+    Code->>Stack: Execute sync code
+    Code->>WebAPI: setTimeout callback
+    WebAPI->>MacroQueue: Add callback
+    Code->>MicroQueue: Promise callback
+    Code->>Stack: More sync code
     
-    Note over Stack: Call Stack empty
+    Note over Stack: Stack is empty
     
-    Loop->>Micro: Check Microtask Queue
-    Micro->>Stack: Move Promise callback
-    Stack->>Stack: Execute Promise callback
+    EventLoop->>MicroQueue: Check microtasks
+    MicroQueue->>Stack: Execute Promise
     
-    Note over Stack: Call Stack empty again
+    Note over Stack: Stack empty again
     
-    Loop->>Macro: Check Macrotask Queue
-    Macro->>Stack: Move callback to Stack
-    Stack->>Stack: Execute callback
+    EventLoop->>MacroQueue: Check macrotasks
+    MacroQueue->>Stack: Execute setTimeout
 ```
 
 ## Code execution order
