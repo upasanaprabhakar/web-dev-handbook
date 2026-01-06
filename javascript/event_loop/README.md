@@ -103,30 +103,30 @@ sequenceDiagram
 This is crucial to understand:
 
 ```javascript
-console.log('1');
+console.log('Start');
 
 setTimeout(() => {
-  console.log('2');
+  console.log('Timeout');
 }, 0);
 
 Promise.resolve().then(() => {
-  console.log('3');
+  console.log('Promise');
 });
 
-console.log('4');
+console.log('End');
 
-// Output: 1, 4, 3, 2
+// Output: Start, End, Promise, Timeout
 ```
 
 **Why this order?**
-1. `console.log('1')` - synchronous, runs immediately
+1. `console.log('Start')` - synchronous, runs immediately
 2. `setTimeout` - sent to Web APIs, callback goes to Macrotask Queue
 3. `Promise.then` - callback goes to Microtask Queue
-4. `console.log('4')` - synchronous, runs immediately
+4. `console.log('End')` - synchronous, runs immediately
 5. Call Stack empty → Event Loop checks Microtask Queue first
-6. `console.log('3')` - from Promise (microtask)
+6. `console.log('Promise')` - from Promise (microtask)
 7. Call Stack empty → Event Loop checks Macrotask Queue
-8. `console.log('2')` - from setTimeout (macrotask)
+8. `console.log('Timeout')` - from setTimeout (macrotask)
 
 ## Microtasks vs Macrotasks
 
