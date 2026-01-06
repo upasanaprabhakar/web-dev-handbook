@@ -75,14 +75,14 @@ sequenceDiagram
     participant Macro as Macrotask Queue
     participant Loop as Event Loop
     
-    Code->>Stack: console.log start
+    Code->>Stack: console log start
     Stack->>Stack: Execute
     Code->>Stack: setTimeout with callback
     Stack->>Web: Send to Web APIs
     Web->>Macro: Add to Macrotask Queue
-    Code->>Stack: Promise.resolve with callback
+    Code->>Stack: Promise resolve with callback
     Stack->>Micro: Add to Microtask Queue
-    Code->>Stack: console.log end
+    Code->>Stack: console log end
     Stack->>Stack: Execute
     
     Note over Stack: Call Stack empty
@@ -94,8 +94,8 @@ sequenceDiagram
     Note over Stack: Call Stack empty again
     
     Loop->>Macro: Check Macrotask Queue
-    Macro->>Stack: Move setTimeout callback
-    Stack->>Stack: Execute setTimeout callback
+    Macro->>Stack: Move callback to Stack
+    Stack->>Stack: Execute callback
 ```
 
 ## Code execution order
