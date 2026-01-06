@@ -22,16 +22,16 @@ JavaScript is single-threaded, meaning it can only do one thing at a time. So ho
 **The answer:** It doesn't wait. It delegates.
 
 ```mermaid
-graph TB
+graph TD
     A[Your Code] --> B[Call Stack]
-    B --> C{Synchronous?}
-    C -->|Yes| D[Execute immediately]
+    B --> C{Is it Synchronous?}
+    C -->|Yes| D[Execute Immediately]
     C -->|No| E[Send to Web APIs]
-    E --> F[Web APIs handle it]
-    F --> G[Task Queue / Microtask Queue]
-    G --> H{Call Stack empty?}
-    H -->|No| H
-    H -->|Yes| I[Event Loop moves task to Call Stack]
+    E --> F[Web APIs Handle It]
+    F --> G[Add to Task Queue]
+    G --> H{Is Call Stack Empty?}
+    H -->|No| G
+    H -->|Yes| I[Event Loop Moves to Stack]
     I --> D
     
     style B fill:#4a90e2
