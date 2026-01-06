@@ -75,14 +75,14 @@ sequenceDiagram
     participant Macro as Macrotask Queue
     participant Loop as Event Loop
     
-    Code->>Stack: console.log('1')
+    Code->>Stack: console.log start
     Stack->>Stack: Execute
-    Code->>Stack: setTimeout(callback, 0)
+    Code->>Stack: setTimeout with callback
     Stack->>Web: Send to Web APIs
     Web->>Macro: Add to Macrotask Queue
-    Code->>Stack: Promise.resolve().then(callback)
+    Code->>Stack: Promise.resolve with callback
     Stack->>Micro: Add to Microtask Queue
-    Code->>Stack: console.log('2')
+    Code->>Stack: console.log end
     Stack->>Stack: Execute
     
     Note over Stack: Call Stack empty
