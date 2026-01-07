@@ -11,13 +11,7 @@ My personal knowledge base for web development. Building this as I learn and bre
 
 ## 📊 Progress
 
-**Current:** 5 topics documented | **Started:** January 2026
-```mermaid
-pie title Topics Covered
-    "JavaScript" : 5
-    "React" : 0
-    "Coming Soon" : 4
-```
+**5 topics documented** | **Started:** January 2026
 
 ## 📖 Topics covered
 
