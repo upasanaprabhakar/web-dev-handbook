@@ -11,11 +11,14 @@ My personal knowledge base for web development. Building this as I learn and bre
 
 ## 📖 Topics covered
 
+## 📖 Topics covered
+
 ### JavaScript
 - [Async/Await](./javascript/async-await/) - Asynchronous JavaScript explained
 - [Promises](./javascript/promises/) - Foundation of async operations
 - [Closures](./javascript/closures/) - Functions that remember their scope
-- [Event Loop](./javascript/event-loop/) - How JavaScript handles async code
+- [Event Loop](./javascript/event_loop/) - How JavaScript handles async code
+- [Array Methods](./javascript/array_methods/) - Working with arrays efficiently
 
 ## 🗂️ How I'm organizing this
 

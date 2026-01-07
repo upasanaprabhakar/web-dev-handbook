@@ -176,8 +176,8 @@ const flattened = nested.flat();
 
 // Or with flatMap
 const numbersFlat = [1, 2, 3];
-const doubled = numbersFlat.flatMap(n => [n, n * 2]);
-// console.log(doubled); // [1, 2, 2, 4, 3, 6]
+const doubledFlat = numbersFlat.flatMap(n => [n, n * 2]);
+// console.log(doubledFlat); // [1, 2, 2, 4, 3, 6]
 
 // 19. Practical: Remove items by condition
 const withoutBob = users.filter(user => user.name !== 'Bob');
@@ -234,5 +234,5 @@ const report = products
 
 // console.log(report);
 
-console.log('\n Array Methods Examples');
+console.log('\n=== Array Methods Examples ===');
 console.log('Uncomment any line to see the output\n');
