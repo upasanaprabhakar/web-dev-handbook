@@ -9,7 +9,15 @@ My personal knowledge base for web development. Building this as I learn and bre
 - Showing my understanding of concepts
 - Portfolio piece
 
+## 📊 Progress
 
+**Current:** 5 topics documented | **Started:** January 2026
+```mermaid
+pie title Topics Covered
+    "JavaScript" : 5
+    "React" : 0
+    "Coming Soon" : 4
+```
 
 ## 📖 Topics covered
 
@@ -27,19 +35,18 @@ Each topic has:
 - Implementation file with code examples
 - Common mistakes and best practices
 
-Keeping it simple - max 2 -3 files per topic.
+Keeping it simple - max 2 files per topic.
 
 ## 🚀 Coming up
 
-- Promises
+- this keyword
+- Prototypes & Inheritance
+- Destructuring
+- Spread & Rest operators
 - React hooks (useState, useEffect)
-- More JavaScript fundamentals
-- Whatever I'm learning that week
 
 ## 💭 Notes
 
 This is my learning journal. Not everything will be perfect, but it's real work and shows my actual understanding. Adding new topics as I learn them.
-
-
 
 ⚡ Started: January 2026
