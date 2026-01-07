@@ -9,7 +9,7 @@ My personal knowledge base for web development. Building this as I learn and bre
 - Showing my understanding of concepts
 - Portfolio piece
 
-## 📖 Topics covered
+
 
 ## 📖 Topics covered
 
