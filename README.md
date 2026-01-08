@@ -21,6 +21,8 @@ My personal knowledge base for web development. Building this as I learn and bre
 - [Closures](./javascript/closures/) - Functions that remember their scope
 - [Event Loop](./javascript/event_loop/) - How JavaScript handles async code
 - [Array Methods](./javascript/array_methods/) - Working with arrays efficiently
+- [This Keyword](./javascript/this_keyword/) - Understanding how this works
+
 
 ## 🗂️ How I'm organizing this
 
