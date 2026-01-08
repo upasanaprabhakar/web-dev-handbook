@@ -103,11 +103,12 @@ graph TD
     B -->|standalone| F[this = global/undefined]
     B -->|bind/call/apply| G[this = specified object]
     
-    style C fill:#90EE90
-    style D fill:#87CEEB
-    style E fill:#FFD700
-    style F fill:#FF6B6B
-    style G fill:#DDA0DD
+    style C fill:#6EE7B7
+    style D fill:#7DD3FC
+    style E fill:#FDE68A
+    style F fill:#FCA5A5
+    style G fill:#E9D5FF
+
 ```
 
 ## Common patterns
