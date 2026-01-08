@@ -371,5 +371,5 @@ class ApiService {
 const api = new ApiService('https://api.example.com/');
 // api.fetchData('/users').then(data => console.log(data));
 
-console.log('\n=== this Keyword Examples ===');
+console.log('\n this Keyword Examples');
 console.log('Uncomment any line to see the output\n');
