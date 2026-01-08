@@ -103,11 +103,12 @@ graph TD
     B -->|standalone| F[this = global/undefined]
     B -->|bind/call/apply| G[this = specified object]
     
-    style C fill:#ECFDF5
-    style D fill:#EFF6FF
-    style E fill:#FFFBEB
-    style F fill:#FEF2F2
-    style G fill:#F5F3FF
+    style C fill:#16A34A
+    style D fill:#2563EB
+    style E fill:#CA8A04
+    style F fill:#DC2626
+    style G fill:#7C3AED
+
 
 
 ```
