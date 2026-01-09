@@ -161,9 +161,10 @@ graph TD
     K --> M
     L --> M
     
-    style C fill:#4a90e2
-    style D fill:#e2a54a
-    style M fill:#90EE90
+    style C fill:#2563EB
+    style D fill:#D97706
+    style M fill:#16A34A
+
 ```
 
 ## Function Parameters
