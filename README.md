@@ -22,6 +22,7 @@ My personal knowledge base for web development. Building this as I learn and bre
 - [Event Loop](./javascript/event_loop/) - How JavaScript handles async code
 - [Array Methods](./javascript/array_methods/) - Working with arrays efficiently
 - [This Keyword](./javascript/this_keyword/) - Understanding how this works
+- [Destructuring](./javascript/destructuring/) - Extract values from arrays and objects
 
 
 ## 🗂️ How I'm organizing this
