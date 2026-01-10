@@ -117,16 +117,17 @@ graph TD
     D --> K[Array Destructuring]
     D --> L[Object Destructuring]
     
-    style C fill:#4a90e2
-    style D fill:#e2a54a
-    style E fill:#90EE90
-    style F fill:#90EE90
-    style G fill:#90EE90
-    style H fill:#90EE90
-    style I fill:#90EE90
-    style J fill:#FFD700
-    style K fill:#FFD700
-    style L fill:#FFD700
+    style C fill:#2563EB
+    style D fill:#D97706
+    style E fill:#16A34A
+    style F fill:#16A34A
+    style G fill:#16A34A
+    style H fill:#16A34A
+    style I fill:#16A34A
+    style J fill:#CA8A04
+    style K fill:#CA8A04
+    style L fill:#CA8A04
+
 ```
 
 ## Spread vs Rest
