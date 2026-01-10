@@ -23,6 +23,8 @@ My personal knowledge base for web development. Building this as I learn and bre
 - [Array Methods](./javascript/array_methods/) - Working with arrays efficiently
 - [This Keyword](./javascript/this_keyword/) - Understanding how this works
 - [Destructuring](./javascript/destructuring/) - Extract values from arrays and objects
+- [Spread & Rest](./javascript/spread_rest/) - Expand and collect values using operators
+
 
 
 ## 🗂️ How I'm organizing this
