@@ -24,6 +24,8 @@ My personal knowledge base for web development. Building this as I learn and bre
 - [This Keyword](./javascript/this_keyword/) - Understanding how this works
 - [Destructuring](./javascript/destructuring/) - Extract values from arrays and objects
 - [Spread & Rest](./javascript/spread_rest/) - Expand and collect values using operators
+- [Inheritance & Prototypes](./javascript/inheritence_prototypes/) - How JavaScript shares behavior
+
 
 
 
