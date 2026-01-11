@@ -52,11 +52,11 @@ graph TD
     I -->|Yes| J[Return undefined]
     I -->|No| F
     
-    style A fill:#4a90e2
-    style D fill:#e2a54a
-    style F fill:#FFD700
-    style C fill:#90EE90
-    style J fill:#FF6B6B
+    style A fill:#2563EB
+    style D fill:#D97706
+    style F fill:#CA8A04
+    style C fill:#16A34A
+    style J fill:#DC2626
 ```
 
 ## Creating Objects with Prototypes
@@ -154,11 +154,11 @@ graph LR
     C --> D[Object.prototype]
     D --> E[null]
     
-    style A fill:#4a90e2
-    style B fill:#e2a54a
-    style C fill:#FFD700
-    style D fill:#DDA0DD
-    style E fill:#FF6B6B
+    style A fill:#2563EB
+    style B fill:#D97706
+    style C fill:#CA8A04
+    style D fill:#7C3AED
+    style E fill:#DC2626
 ```
 
 ## Checking Prototypes
