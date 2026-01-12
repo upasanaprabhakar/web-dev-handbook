@@ -11,7 +11,7 @@ My personal knowledge base for web development. Building this as I learn and bre
 
 ## 📊 Progress
 
-**9 topics documented** | **Started:** January 2026
+**10 topics documented** | **Started:** January 2026
 
 ## 📖 Topics covered
 

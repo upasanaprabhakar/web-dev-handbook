@@ -115,6 +115,7 @@ sequenceDiagram
     Note over Debounce: Wait delay time
     Debounce->>Function: Execute once
 ```
+---
 
 ```mermaid
 sequenceDiagram
