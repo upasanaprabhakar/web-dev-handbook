@@ -21,10 +21,11 @@ My personal knowledge base for web development. Building this as I learn and bre
 - [Closures](./javascript/closures/) - Functions that remember their scope
 - [Event Loop](./javascript/event_loop/) - How JavaScript handles async code
 - [Array Methods](./javascript/array_methods/) - Working with arrays efficiently
-- [This Keyword](./javascript/this_keyword/) - Understanding how this works
+- [This Keyword](./javascript/this_keyword/) - Understanding context in functions
 - [Destructuring](./javascript/destructuring/) - Extract values from arrays and objects
-- [Spread & Rest](./javascript/spread_rest/) - Expand and collect values using operators
-- [Inheritance & Prototypes](./javascript/inheritence_prototypes/) - How JavaScript shares behavior
+- [Spread & Rest](./javascript/spread_rest/) - Expand and collect values efficiently
+- [Prototypes](./javascript/prototypes/) - How JavaScript implements inheritance
+- [Debouncing & Throttling](./javascript/debouncing_throttling/) - Control function execution frequency
 
 
 
