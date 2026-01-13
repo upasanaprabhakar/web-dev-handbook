@@ -11,7 +11,7 @@ My personal knowledge base for web development. Building this as I learn and bre
 
 ## 📊 Progress
 
-**10 topics documented** | **Started:** January 2026
+**11 topics documented** | **Started:** January 2026
 
 ## 📖 Topics covered
 
@@ -26,8 +26,7 @@ My personal knowledge base for web development. Building this as I learn and bre
 - [Spread & Rest](./javascript/spread_rest/) - Expand and collect values efficiently
 - [Prototypes](./javascript/prototypes/) - How JavaScript implements inheritance
 - [Debouncing & Throttling](./javascript/debouncing_throttling/) - Control function execution frequency
-
-
+- [Hoisting](./javascript/hoisting/) - How JavaScript handles variable declarations
 
 
 ## 🗂️ How I'm organizing this
