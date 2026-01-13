@@ -79,9 +79,9 @@ graph TD
     F --> G[Run code line by line]
     G --> H[Initialize variables when reached]
     
-    style B fill:#4a90e2
-    style F fill:#90EE90
-    style E fill:#FF6B6B
+    style B fill:#2563EB
+    style F fill:#16A34A
+    style E fill:#DC2626
 ```
 
 ## Temporal Dead Zone
@@ -104,8 +104,8 @@ graph LR
     B --> C[let x = 10]
     C --> D[x is accessible]
     
-    style B fill:#FF6B6B
-    style D fill:#90EE90
+    style B fill:#DC2626
+    style D fill:#16A34A
 ```
 
 ## Function Expressions vs Declarations
