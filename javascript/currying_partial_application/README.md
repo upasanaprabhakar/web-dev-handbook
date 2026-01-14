@@ -79,7 +79,7 @@ double(5);  // 10
 triple(5);  // 15
 ```
 
-## Visualizing the flow
+## Visualizing the execution flow
 
 ```mermaid
 graph LR
@@ -93,6 +93,29 @@ graph LR
     style C fill:#3B82F6
     style E fill:#3B82F6
     style F fill:#16A34A
+```
+
+## When to use what
+
+```mermaid
+graph TD
+    A[Need to create function] --> B{Will you reuse with different args?}
+    B -->|Yes| C{How many args to fix?}
+    B -->|No| D[Use normal function]
+    C -->|One at a time| E[Use Currying]
+    C -->|Multiple at once| F[Use Partial Application]
+    C -->|Building step-by-step config| G[Use Currying chain]
+    E --> H[multiply 2  then  5]
+    F --> I[greet.bind null, 'Hello']
+    G --> J[createUser role  dept  name]
+    
+    style D fill:#DC2626
+    style E fill:#16A34A
+    style F fill:#2563EB
+    style G fill:#7C3AED
+    style H fill:#059669
+    style I fill:#1D4ED8
+    style J fill:#6D28D9
 ```
 
 ## Partial Application with bind()
