@@ -30,7 +30,7 @@ My personal knowledge base for web development. Building this as I learn and bre
 - [Currying & Partial Application](./javascript/currying_partial_application/) - Create specialized functions from generic ones
 
 ### React
-- [useState Hook](./react/hooks/useState/) - Manage component state and trigger re-renders
+- [useState Hook](./react/useState/) - Manage component state and trigger re-renders
 
 
 ## 🗂️ How I'm organizing this
