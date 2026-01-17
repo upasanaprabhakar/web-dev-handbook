@@ -59,9 +59,9 @@ graph TD
     F --> G[Component re-renders with new state]
     G --> C
     
-    style B fill:#4a90e2
-    style E fill:#e2a54a
-    style F fill:#90EE90
+    style B fill:#2563EB
+    style E fill:#D97706
+    style F fill:#16A34A
 ```
 
 ## State Update Flow
