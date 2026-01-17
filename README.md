@@ -11,7 +11,7 @@ My personal knowledge base for web development. Building this as I learn and bre
 
 ## 📊 Progress
 
-**12 topics documented** | **Started:** January 2026
+**13 topics documented** | **Started:** January 2026
 
 ## 📖 Topics covered
 
@@ -28,6 +28,9 @@ My personal knowledge base for web development. Building this as I learn and bre
 - [Debouncing & Throttling](./javascript/debouncing_throttling/) - Control function execution frequency
 - [Hoisting](./javascript/hoisting/) - How JavaScript handles variable declarations
 - [Currying & Partial Application](./javascript/currying_partial_application/) - Create specialized functions from generic ones
+
+### React
+- [useState Hook](./react/hooks/useState/) - Manage component state and trigger re-renders
 
 
 ## 🗂️ How I'm organizing this
