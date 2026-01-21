@@ -11,7 +11,7 @@ My personal knowledge base for web development. Building this as I learn and bre
 
 ## 📊 Progress
 
-**13 topics documented** | **Started:** January 2026
+**14 topics documented** | **Started:** January 2026
 
 ## 📖 Topics covered
 
@@ -31,6 +31,7 @@ My personal knowledge base for web development. Building this as I learn and bre
 
 ### React
 - [useState Hook](./react/useState/) - Manage component state and trigger re-renders
+- [useEffect Hook](./react/useEffect/) - Handle side effects and component lifecycle
 
 
 ## 🗂️ How I'm organizing this
