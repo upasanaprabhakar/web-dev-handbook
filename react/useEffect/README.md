@@ -79,9 +79,9 @@ graph TD
     
     H[Component Unmounts] --> I[Run Cleanup]
     
-    style C fill:#90EE90
-    style E fill:#FFD700
-    style I fill:#FF6B6B
+    style C fill:#16A34A
+    style E fill:#CA8A04
+    style I fill:#DC2626
 ```
 
 ## Component Lifecycle with useEffect
