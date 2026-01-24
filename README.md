@@ -32,6 +32,7 @@ My personal knowledge base for web development. Building this as I learn and bre
 ### React
 - [useState Hook](./react/useState/) - Manage component state and trigger re-renders
 - [useEffect Hook](./react/useEffect/) - Handle side effects and component lifecycle
+- [useContext Hook](./react/useContext/) - Share data across component tree without props
 
 
 ## 🗂️ How I'm organizing this
