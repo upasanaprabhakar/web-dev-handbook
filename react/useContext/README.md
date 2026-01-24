@@ -66,10 +66,10 @@ graph TD
     F[Value Changes] --> C
     C --> G[All consumers re-render]
     
-    style B fill:#4a90e2
-    style C fill:#90EE90
-    style E fill:#FFD700
-    style G fill:#e2a54a
+    style B fill:#2563EB
+    style C fill:#16A34A
+    style E fill:#CA8A04
+    style G fill:#D97706
 ```
 
 ## Context Flow
