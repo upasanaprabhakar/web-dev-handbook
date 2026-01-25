@@ -11,7 +11,7 @@ My personal knowledge base for web development. Building this as I learn and bre
 
 ## 📊 Progress
 
-**15 topics documented** | **Started:** January 2026
+**16 topics documented** | **Started:** January 2026
 
 ## 📖 Topics covered
 
@@ -33,6 +33,7 @@ My personal knowledge base for web development. Building this as I learn and bre
 - [useState Hook](./react/useState/) - Manage component state and trigger re-renders
 - [useEffect Hook](./react/useEffect/) - Handle side effects and component lifecycle
 - [useContext Hook](./react/useContext/) - Share data across component tree without props
+- [useRef Hook](./react/useRef/) - Access DOM elements and persist values without re-renders
 
 
 ## 🗂️ How I'm organizing this
