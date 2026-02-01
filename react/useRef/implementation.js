@@ -14,7 +14,7 @@ function FocusInput() {
   };
   
   return (
-    <div style={{ padding: '20px', border: '1px solid #ccc', marginBottom: '20px' }}>
+    <div>
       <h3>1. Focus Input</h3>
       <input ref={inputRef} type="text" placeholder="Click button to focus" />
       <button onClick={handleFocus}>Focus</button>
@@ -42,7 +42,7 @@ function RefVsState() {
   };
   
   return (
-    <div style={{ padding: '20px', border: '1px solid #ccc', marginBottom: '20px' }}>
+    <div>
       <h3>2. useRef vs useState</h3>
       <p>Component rendered {renderCount.current} times</p>
       <p>State Count (visible): {stateCount}</p>
@@ -88,9 +88,9 @@ function Stopwatch() {
   }, []);
   
   return (
-    <div style={{ padding: '20px', border: '1px solid #ccc', marginBottom: '20px' }}>
+    <div>
       <h3>3. Stopwatch (Timer ID in Ref)</h3>
-      <p style={{ fontSize: '2em' }}>{time}s</p>
+      <p>{time}s</p>
       <button onClick={start} disabled={isRunning}>Start</button>
       <button onClick={stop} disabled={!isRunning}>Stop</button>
       <button onClick={reset}>Reset</button>
@@ -114,14 +114,14 @@ function PreviousValueTracker() {
   }, [name]);
   
   return (
-    <div style={{ padding: '20px', border: '1px solid #ccc', marginBottom: '20px' }}>
+    <div>
       <h3>4. Previous Value Tracker</h3>
       <div>
         <p>Current Count: {count}</p>
         <p>Previous Count: {prevCountRef.current}</p>
         <button onClick={() => setCount(count + 1)}>Increment</button>
       </div>
-      <div style={{ marginTop: '10px' }}>
+      <div>
         <p>Current Name: {name}</p>
         <p>Previous Name: {prevNameRef.current}</p>
         <input 
@@ -145,33 +145,33 @@ function ScrollToElement() {
   };
   
   return (
-    <div style={{ padding: '20px', border: '1px solid #ccc', marginBottom: '20px' }}>
+    <div>
       <h3>5. Scroll to Element</h3>
-      <div style={{ marginBottom: '10px' }}>
+      <div>
         <button onClick={() => scrollTo(topRef)}>Scroll to Top</button>
         <button onClick={() => scrollTo(middleRef)}>Scroll to Middle</button>
         <button onClick={() => scrollTo(bottomRef)}>Scroll to Bottom</button>
       </div>
       
-      <div ref={topRef} style={{ padding: '20px', backgroundColor: '#e3f2fd', marginBottom: '10px' }}>
+      <div ref={topRef}>
         <h4>Top Section</h4>
         <p>This is the top section</p>
       </div>
       
-      <div style={{ height: '200px', backgroundColor: '#f5f5f5', marginBottom: '10px' }}>
+      <div style={{ height: '200px' }}>
         <p>Scroll space...</p>
       </div>
       
-      <div ref={middleRef} style={{ padding: '20px', backgroundColor: '#fff3e0', marginBottom: '10px' }}>
+      <div ref={middleRef}>
         <h4>Middle Section</h4>
         <p>This is the middle section</p>
       </div>
       
-      <div style={{ height: '200px', backgroundColor: '#f5f5f5', marginBottom: '10px' }}>
+      <div style={{ height: '200px' }}>
         <p>Scroll space...</p>
       </div>
       
-      <div ref={bottomRef} style={{ padding: '20px', backgroundColor: '#e8f5e9' }}>
+      <div ref={bottomRef}>
         <h4>Bottom Section</h4>
         <p>This is the bottom section</p>
       </div>
@@ -195,19 +195,16 @@ function CharacterCounter() {
   };
   
   return (
-    <div style={{ padding: '20px', border: '1px solid #ccc', marginBottom: '20px' }}>
+    <div>
       <h3>6. Character Counter (Ref - No Re-render)</h3>
       <input 
         ref={inputRef}
         onInput={handleInput}
         placeholder="Type something..."
-        style={{ width: '100%', marginBottom: '10px' }}
       />
       <p>Characters typed: {displayCount}</p>
       <button onClick={showCount}>Show Count</button>
-      <p style={{ fontSize: '0.9em', color: '#666' }}>
-        (Input doesn't cause re-renders, click button to see count)
-      </p>
+      <p>(Input doesn't cause re-renders, click button to see count)</p>
     </div>
   );
 }
@@ -231,24 +228,14 @@ function ClickOutsideDemo() {
   }, []);
   
   return (
-    <div style={{ padding: '20px', border: '1px solid #ccc', marginBottom: '20px' }}>
+    <div>
       <h3>7. Click Outside to Close</h3>
-      <div ref={dropdownRef} style={{ position: 'relative', display: 'inline-block' }}>
+      <div ref={dropdownRef}>
         <button onClick={() => setIsOpen(!isOpen)}>
           {isOpen ? 'Close' : 'Open'} Dropdown
         </button>
         {isOpen && (
-          <div style={{
-            position: 'absolute',
-            top: '100%',
-            left: 0,
-            backgroundColor: 'white',
-            border: '1px solid #ccc',
-            padding: '10px',
-            marginTop: '5px',
-            minWidth: '150px',
-            zIndex: 1000
-          }}>
+          <div style={{ border: '1px solid black', padding: '10px' }}>
             <p>Dropdown Content</p>
             <p>Click outside to close</p>
           </div>
@@ -284,17 +271,14 @@ function DebouncedSearch() {
   }, []);
   
   return (
-    <div style={{ padding: '20px', border: '1px solid #ccc', marginBottom: '20px' }}>
+    <div>
       <h3>8. Debounced Search</h3>
       <input 
         value={query}
         onChange={handleChange}
         placeholder="Type to search..."
-        style={{ width: '100%', marginBottom: '10px' }}
       />
-      <p style={{ fontSize: '0.9em', color: '#666' }}>
-        (Search happens 500ms after you stop typing)
-      </p>
+      <p>(Search happens 500ms after you stop typing)</p>
       {results.length > 0 && (
         <div>
           <h4>Results:</h4>
@@ -325,12 +309,12 @@ function FirstRenderDetector() {
   });
   
   return (
-    <div style={{ padding: '20px', border: '1px solid #ccc', marginBottom: '20px' }}>
+    <div>
       <h3>9. First Render Detection</h3>
       <p>Count: {count}</p>
       <p>Total Renders: {renderCountRef.current}</p>
       <button onClick={() => setCount(count + 1)}>Increment</button>
-      <p style={{ fontSize: '0.9em', color: '#666' }}>Check console for render logs</p>
+      <p>Check console for render logs</p>
     </div>
   );
 }
@@ -348,31 +332,26 @@ function MultiInputFocus() {
   };
   
   return (
-    <div style={{ padding: '20px', border: '1px solid #ccc', marginBottom: '20px' }}>
+    <div>
       <h3>10. Auto-Focus Next Input</h3>
       <p>Enter 3 digits in each box (auto-moves to next)</p>
-      <div style={{ display: 'flex', gap: '10px' }}>
-        <input 
-          ref={input1Ref}
-          maxLength={3}
-          onChange={() => focusNext(input1Ref, input2Ref)}
-          style={{ width: '50px', textAlign: 'center' }}
-          placeholder="###"
-        />
-        <input 
-          ref={input2Ref}
-          maxLength={3}
-          onChange={() => focusNext(input2Ref, input3Ref)}
-          style={{ width: '50px', textAlign: 'center' }}
-          placeholder="###"
-        />
-        <input 
-          ref={input3Ref}
-          maxLength={3}
-          style={{ width: '50px', textAlign: 'center' }}
-          placeholder="###"
-        />
-      </div>
+      <input 
+        ref={input1Ref}
+        maxLength={3}
+        onChange={() => focusNext(input1Ref, input2Ref)}
+        placeholder="###"
+      />
+      <input 
+        ref={input2Ref}
+        maxLength={3}
+        onChange={() => focusNext(input2Ref, input3Ref)}
+        placeholder="###"
+      />
+      <input 
+        ref={input3Ref}
+        maxLength={3}
+        placeholder="###"
+      />
     </div>
   );
 }
@@ -411,7 +390,7 @@ function CanvasDrawing() {
   };
   
   return (
-    <div style={{ padding: '20px', border: '1px solid #ccc', marginBottom: '20px' }}>
+    <div>
       <h3>11. Canvas Drawing</h3>
       <canvas
         ref={canvasRef}
@@ -421,7 +400,7 @@ function CanvasDrawing() {
         onMouseMove={draw}
         onMouseUp={stopDrawing}
         onMouseLeave={stopDrawing}
-        style={{ border: '1px solid black', cursor: 'crosshair' }}
+        style={{ border: '1px solid black' }}
       />
       <br />
       <button onClick={clearCanvas}>Clear</button>
@@ -458,25 +437,21 @@ function AutoSaveForm() {
   }, []);
   
   return (
-    <div style={{ padding: '20px', border: '1px solid #ccc', marginBottom: '20px' }}>
+    <div>
       <h3>12. Auto-Save Form</h3>
       <input
         ref={nameRef}
         onInput={handleInput}
         placeholder="Name"
-        style={{ display: 'block', marginBottom: '10px', width: '100%' }}
       />
       <input
         ref={emailRef}
         onInput={handleInput}
         placeholder="Email"
-        style={{ display: 'block', marginBottom: '10px', width: '100%' }}
       />
-      <p style={{ fontSize: '0.9em', color: '#666' }}>
-        (Auto-saves 1 second after you stop typing)
-      </p>
+      <p>(Auto-saves 1 second after you stop typing)</p>
       {savedData && (
-        <div style={{ padding: '10px', backgroundColor: '#e8f5e9', marginTop: '10px' }}>
+        <div>
           <p><strong>Last Saved:</strong> {savedData.savedAt}</p>
           <p>Name: {savedData.name}</p>
           <p>Email: {savedData.email}</p>
@@ -489,7 +464,7 @@ function AutoSaveForm() {
 // Main App Component
 export default function App() {
   return (
-    <div style={{ padding: '20px', fontFamily: 'Arial', maxWidth: '800px', margin: '0 auto' }}>
+    <div>
       <h1>useRef Hook Examples</h1>
       <FocusInput />
       <RefVsState />
