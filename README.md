@@ -30,6 +30,7 @@ My personal knowledge base for web development. Building this as I learn and bre
 - [Currying & Partial Application](./javascript/currying_partial_application/) - Create specialized functions from generic ones
 
 ### React
+- [State and Props](./react/state_props/) - Manage component data and pass information between components
 - [useState Hook](./react/useState/) - Manage component state and trigger re-renders
 - [useEffect Hook](./react/useEffect/) - Handle side effects and component lifecycle
 - [useContext Hook](./react/useContext/) - Share data across component tree without props
