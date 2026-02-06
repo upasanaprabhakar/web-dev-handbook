@@ -24,7 +24,7 @@ My personal knowledge base for web development. Building this as I learn and bre
 - [This Keyword](./javascript/this_keyword/) - Understanding context in functions
 - [Destructuring](./javascript/destructuring/) - Extract values from arrays and objects
 - [Spread & Rest](./javascript/spread_rest/) - Expand and collect values efficiently
-- [Prototypes](./javascript/prototypes/) - How JavaScript implements inheritance
+- [Prototypes](./javascript/inheritence_prototypes/) - How JavaScript implements inheritance
 - [Debouncing & Throttling](./javascript/debouncing_throttling/) - Control function execution frequency
 - [Hoisting](./javascript/hoisting/) - How JavaScript handles variable declarations
 - [Currying & Partial Application](./javascript/currying_partial_application/) - Create specialized functions from generic ones
