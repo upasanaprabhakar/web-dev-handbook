@@ -108,17 +108,17 @@ const handleClick = useMemo(() => {
 ## When to Use vs Not Use
 
 ```mermaid
-graph TD
-    A[Creating a function] --> B{Passed to child wrapped in React.memo?}
+flowchart TD
+    A[Creating a function] --> B{Passed to child<br/>wrapped in React.memo?}
     B -->|Yes| C[Use useCallback]
-    B -->|No| D{Used in useEffect dependencies?}
+    B -->|No| D{Used in useEffect<br/>dependencies?}
     D -->|Yes| C
     D -->|No| E{Expensive to create?}
     E -->|Yes| C
     E -->|No| F[Don't use useCallback]
     
-    style C fill:#16A34A
-    style F fill:#DC2626
+    style C fill:#16A34A,color:#fff
+    style F fill:#DC2626,color:#fff
 ```
 
 ## Basic Examples
