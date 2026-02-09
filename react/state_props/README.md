@@ -45,12 +45,12 @@ function Parent() {
 
 ```mermaid
 graph TD
-    A[Parent Component] -->|Props| B[Child Component]
-    A -->|Props| C[Another Child]
-    B -->|Props| D[Grandchild]
+    A[Parent Component] --> B[Child Component]
+    A --> C[Another Child]
+    B --> D[Grandchild]
 
-    A1[State in Parent] -.->|Controls| A
-    B1[State in Child] -.->|Controls| B
+    A1[State in Parent] --> A
+    B1[State in Child] --> B
 
     classDef parent fill:#3B82F6,color:#ffffff
     classDef child fill:#16A34A,color:#ffffff
@@ -61,6 +61,7 @@ graph TD
     class B,C child
     class D grand
     class A1,B1 state
+
 
 ```
 
@@ -356,15 +357,15 @@ function EditForm({ initialUser }) {
 
 ```mermaid
 graph TD
-    A[Parent State] -->|Props| B[Child 1]
-    A -->|Props| C[Child 2]
-    B -->|Props| D[Grandchild 1]
-    C -->|Props| E[Grandchild 2]
+    A[Parent State] --> B[Child 1]
+    A --> C[Child 2]
+    B --> D[Grandchild 1]
+    C --> E[Grandchild 2]
 
-    D -.->|Callback| B
-    B -.->|Callback| A
-    E -.->|Callback| C
-    C -.->|Callback| A
+    D --> B
+    B --> A
+    E --> C
+    C --> A
 
     classDef parent fill:#3B82F6,color:#ffffff
     classDef child fill:#16A34A,color:#ffffff
@@ -373,6 +374,7 @@ graph TD
     class A parent
     class B,C child
     class D,E grand
+
 
 ```
 
