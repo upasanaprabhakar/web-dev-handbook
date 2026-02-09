@@ -48,16 +48,20 @@ graph TD
     A[Parent Component] -->|Props| B[Child Component]
     A -->|Props| C[Another Child]
     B -->|Props| D[Grandchild]
-    
+
     A1[State in Parent] -.->|Controls| A
     B1[State in Child] -.->|Controls| B
-    
-    style A fill:#3B82F6
-    style B fill:#16A34A
-    style C fill:#16A34A
-    style D fill:#CA8A04
-    style A1 fill:#7C3AED
-    style B1 fill:#7C3AED
+
+    classDef parent fill:#3B82F6,color:#ffffff
+    classDef child fill:#16A34A,color:#ffffff
+    classDef grand fill:#CA8A04,color:#ffffff
+    classDef state fill:#7C3AED,color:#ffffff
+
+    class A parent
+    class B,C child
+    class D grand
+    class A1,B1 state
+
 ```
 
 ## How Data Flows in React
@@ -356,17 +360,20 @@ graph TD
     A -->|Props| C[Child 2]
     B -->|Props| D[Grandchild 1]
     C -->|Props| E[Grandchild 2]
-    
+
     D -.->|Callback| B
     B -.->|Callback| A
     E -.->|Callback| C
     C -.->|Callback| A
-    
-    style A fill:#3B82F6
-    style B fill:#16A34A
-    style C fill:#16A34A
-    style D fill:#CA8A04
-    style E fill:#CA8A04
+
+    classDef parent fill:#3B82F6,color:#ffffff
+    classDef child fill:#16A34A,color:#ffffff
+    classDef grand fill:#CA8A04,color:#ffffff
+
+    class A parent
+    class B,C child
+    class D,E grand
+
 ```
 
 **Data flows down** (via props)  
