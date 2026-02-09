@@ -71,17 +71,22 @@ const cachedFunction = useCallback(() => {
 
 ```mermaid
 graph TD
-    A[Component Renders] --> B{Dependencies Changed?}
-    B -->|Yes| C[Create New Function]
-    B -->|No| D[Return Cached Function]
-    C --> E[Cache New Function]
-    E --> F[Return New Function]
+    A[Component renders] --> B{Deps changed?}
+    B -->|Yes| C[Create function]
+    B -->|No| D[Reuse function]
+    C --> E[Cache function]
+    E --> F[Return function]
     D --> F
-    F --> G[Continue Rendering]
-    
-    style C fill:#DC2626
-    style D fill:#16A34A
-    style E fill:#CA8A04
+    F --> G[Continue render]
+
+    classDef danger fill:#DC2626,color:#ffffff
+    classDef success fill:#16A34A,color:#ffffff
+    classDef warning fill:#CA8A04,color:#000000
+
+    class C danger
+    class D success
+    class E warning
+
 ```
 
 ## useCallback vs useMemo
@@ -109,16 +114,20 @@ const handleClick = useMemo(() => {
 
 ```mermaid
 flowchart TD
-    A[Creating a function] --> B{Passed to child<br/>wrapped in React.memo?}
+    A[Creating function] --> B{Memoized child?}
     B -->|Yes| C[Use useCallback]
-    B -->|No| D{Used in useEffect<br/>dependencies?}
+    B -->|No| D{Effect deps?}
     D -->|Yes| C
-    D -->|No| E{Expensive to create?}
+    D -->|No| E{Expensive?}
     E -->|Yes| C
-    E -->|No| F[Don't use useCallback]
-    
-    style C fill:#16A34A,color:#fff
-    style F fill:#DC2626,color:#fff
+    E -->|No| F[Skip useCallback]
+
+    classDef yes fill:#16A34A,color:#ffffff
+    classDef no fill:#DC2626,color:#ffffff
+
+    class C yes
+    class F no
+
 ```
 
 ## Basic Examples
